@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Магазин Лили Кузьбар</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>ИП Лиля Кузьбар</h1>
+            <p>Стройность без стресса на кухне</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://source.unsplash.com/800x600/?healthy-breakfast');"></div>
+            <div class="product-info">
+                <h3>Конструктор завтраков</h3>
+                <p class="description">30 быстрых и полезных рецептов за 10 минут. Зарядись энергией с утра!</p>
+                <div class="price-block">
+                    <span class="price">990 ₽</span>
+                    <button class="buy-btn" onclick="buyProduct('breakfast_990')">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('https://source.unsplash.com/800x600/?meal-prep');"></div>
+            <div class="product-info">
+                <h3>Умные заготовки на неделю</h3>
+                <p class="description">Система готовки 1 раз в неделю. Экономь до 10 часов времени!</p>
+                <div class="price-block">
+                    <span class="price">2 490 ₽</span>
+                    <button class="buy-btn" onclick="buyProduct('prep_2490')">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card popular">
+            <span class="badge">VIP</span>
+            <div class="product-image" style="background-image: url('https://source.unsplash.com/800x600/?nutritionist');"></div>
+            <div class="product-info">
+                <h3>Личное сопровождение</h3>
+                <p class="description">Индивидуальный разбор рациона и поддержка до результата от Лили.</p>
+                <div class="price-block">
+                    <span class="price">5 000 ₽</span>
+                    <button class="buy-btn main-btn" onclick="buyProduct('vip_5000')">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>ИП Кузьбар Лиля</p>
+        <a href="#">Договор оферты и Политика конфиденциальности</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
